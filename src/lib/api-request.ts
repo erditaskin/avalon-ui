@@ -12,8 +12,10 @@ const isServer = typeof window === "undefined";
 const config: AxiosRequestConfig = {
   baseURL: baseURL,
   headers: {
+    "Access-Control-Allow-Origin": "*",
     "Content-Type": "application/json",
     Authorization: null,
+    crossorigin: true,
   },
 };
 
